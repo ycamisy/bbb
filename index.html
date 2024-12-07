@@ -187,23 +187,50 @@ li a:hover {
     align-items: center;
 }
 
-.home img{
-  display: block;
-  margin: auto;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  cursor: pointer;
+.home img {
+  display: block; 
+  margin: 0 auto; 
+  max-width: 100%; 
+  height: auto; 
+  width: 100vw; 
+  object-fit: cover;
 }
 
 .homemenor img {
   display: block;
-  margin: auto;
-  width: 100%;
+  margin: 0 auto;
   max-width: 100%;
   height: auto;
-  cursor: pointer;
+  width: 100vw
+  object-fit: cover; 
 }
+
+@media (max-width: 768px) {
+  .home img {
+    width: 100%; 
+    max-width: 100%;
+    height: auto;
+  }
+  .homemenor img {
+    width: 100%; 
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .home img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .homemenor img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 .novidades {
   background-color: #ffffff;
 }
