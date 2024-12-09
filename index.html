@@ -188,10 +188,9 @@ li a:hover {
 }
 
 .home img{
-  align-items: center;
-  width: 1366px;
+  width: 100%
+  height: auto;
   cursor: pointer;
-
 }
 
 .novidades {
@@ -273,14 +272,6 @@ li a:hover {
 
 }
 
-
-
-@media (max-width: 768px) {
-  .home img {
-    width: 100%; 
-    max-width: 100%; 
-  }
-
   
   #novo {
     flex-direction: column; 
@@ -317,12 +308,20 @@ li a:hover {
 
 }
 
-@media(max-width: 450px){
-  .thor img{
-    width: 450px;
+@media (max-width: 768px) {
+  .home img {
+    width: 100%;  
+    max-width: 100%;  
+  }
+}
+
+@media (max-width: 450px) {
+  .home img {
+    width: 100%; 
     height: auto;  
   }
 }
+
 
 
 </style>
