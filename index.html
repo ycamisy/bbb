@@ -366,8 +366,25 @@ li a:hover {
     text-align: center;
   }
 }
+@media only screen and (min-width: 1920){
+  #produtos{
+   display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    justify-items: center;
+ }
+  #produtos .produtos:nth-child(3) {
+    grid-column: span 1; 
+    text-align: center;
+  }
+}
 @media only screen and (min-width: 1025px) {
- #produtos, #novo {
+ #produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  #novo {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
