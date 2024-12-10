@@ -12,22 +12,15 @@
 
 <link href="https://fonts.cdnfonts.com/css/futura-std-4" rel="stylesheet">
 <style>
-* {
-  box-sizing: border-box;
-}
+* {box-sizing: border-box;}
 body {
   margin: 0; 
   padding-top: 100px;
   font-family: Verdana, sans-serif;
-}
 
-.mySlides {
-  display: none;
 }
-
-img {
-  vertical-align: middle;
-}
+.mySlides {display: none;}
+img {vertical-align: middle;}
 
 .slideshow-container {
   position: relative;
@@ -44,6 +37,7 @@ img {
   text-align: center;
 }
 
+
 .active {
   background-color: #ee6060;
 }
@@ -54,13 +48,19 @@ img {
 }
 
 @keyframes fade {
-  from {
-    opacity: .4;
-  } 
-  to {
-    opacity: 1;
-  }
+  from {opacity: .4} 
+  to {opacity: 1}
 }
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+  .home img {
+  align-items: center; 
+  width: 1366px; 
+  cursor:pointer;
+}
+}
+
 ul {
   list-style-type: none;
   margin: 0; 
@@ -68,15 +68,13 @@ ul {
   overflow: hidden;
   background-color: #ffbecc;
   width: 100%; 
+  border: none; 
   display: flex; 
   justify-content: center; 
   align-items: center;
-  position: fixed;
-  top: 0;
-  z-index: 999;
 }
 
-ul img {
+ul img{
   float: left;
   width: 150px; 
   height: 100px;
@@ -98,60 +96,61 @@ li a:hover {
   background-color: #b84c65;
 }
 
-.produtos, .novo {
+
+
+.produtos{
   margin: 15px;
   cursor: pointer;
   border-width: 15px; 
   border-style: solid;
-  border-color: white;
+  border-color:  white;
   border-radius: 30px;
   background-color: white;
-  text-align: center;
 }
 
-.produtos img, .novo img {
+.produtos img{
   width: 250px;
   border-radius: 30px;
   background-color: white;
 }
 
-.produtos:hover, .novo:hover {
-  transition: .5s;
-  transform: scale(1.1);
-  cursor: pointer;
-  z-index: 2;
+.produtos:hover{
+      transition:.5s;
+      transform:scale(1.1);
+      cursor:pointer;
+      z-index:2;
 }
 
-.produtos p, .novo p {
-  background-color: white;
-  color: #FC8A5B;
-  padding: 10px 15px;
-  font-family: Verdana, sans-serif;
-  text-align: center;
-  width: 100%;
-  margin: 0;
+.produtos p{
+ background-color: white;
+ color: #FC8A5B;
+ padding: 10px 15px;
+ font-family: Verdana, sans-serif;
+ text-align: center;
+ width: 100%;
+ margin: 0;
 }
 
-#produtos, #novo {
+#produtos{
   margin: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-#produtos a, #novo a {
+#produtos a {
   text-decoration: none;
   color: inherit; 
 }
-
 .cardapio {
   background-color: #ffd3b1;
   padding: 0; 
   margin: 0;
 }
 
+
 #titulo {
-  font-family: 'Futura Std', sans-serif;                                               
+  font-family: 'Futura Std', sans-serif;                                              
   text-align: center;
   color: white;
   margin-top: 0px; 
@@ -162,13 +161,12 @@ li a:hover {
   width: 100%;
 }
 
-#texto {
+#texto{
   color: #b84c65;
   text-align: center;
-  font-family: 'Futura Std', sans-serif;
+  font-family:'Futura Std', sans-serif;
   font-size: 20px;
 }
-
 .contato{
   position: relative;
   bottom:0;
@@ -189,21 +187,127 @@ li a:hover {
     align-items: center;
 }
 
-  .sobre{
+.home{
+  width: 100%
+  height: auto;
+  background-image: url(imgs/homemenor.png);
+}
+
+.novidades {
+  background-color: #ffffff;
+}
+
+#novo {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; 
+} 
+
+.novo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin: 15px;
+  cursor: pointer;
+  border-width: 15px; 
+  text-align: center;
+}
+
+.novo img {
+  width: 150px;
+  border-radius: 30px;
+  margin-bottom: 10px; 
+}
+
+.novo p {
+  color: #b84c65;
+  padding: 10px 15px;
+  font-family: Verdana, sans-serif;
+  width: 100%;
+  margin: 0;
+}
+
+.sobre{
   background-image: url('imgs/sobre.png');
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
   height: 100%;
   padding: 50px 0;
+
+
+
 }
 
-  .home{
-  width: 100%
-  height: auto;
-  background-image: url(imgs/homemenor.png);
+.textbox {
+  padding: 40px;                  
+  margin: 20px 100px;                 
+  border-radius: 30px;             
+  background-color: white;         
+  width: 300px;   
+  min-height:500px; 
+  max-height: 500px;                
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 500px;
 }
+
+#titulo2{
+  font-family: 'Futura Std', sans-serif;                                              
+  text-align: center;
+  color: #b84c65;
+  margin-top: 0px; 
+  font-size: 35px;
+  font-weight: 650;
+
+}
+
+#texto2{
+  font-family: 'Futura Std', sans-serif;                                              
+  text-align: center;
+  color: #6f4743;
+  margin-top: 0px; 
+  font-size: 20px;
+
+}
+
   
+  #novo {
+    flex-direction: column; 
+    gap: 10px; 
+  }
+
+  .novidades {
+    padding: 10px;
+  }
+
+  
+  .sobre {
+    background-size: cover; 
+    padding: 20px 0;
+  }
+
+
+  
+  #titulo2, #texto2 {
+    font-size: 1.2em; 
+    padding: 0 10px;
+  }
+
+
+#logo{
+  float: center;
+  width: 150px; 
+  height: 100px;
+}
+#navigator{
+    z-index: 999;
+    height:100px;
+    position:fixed; top:0;
+
+}
+
 @media only screen and (max-width: 768px) {
   ul {
     flex-direction: column;
