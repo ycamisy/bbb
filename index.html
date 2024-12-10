@@ -169,24 +169,41 @@ li a:hover {
   font-size: 20px;
 }
 
-.contato {
+.contato{
   position: relative;
-  bottom: 0;
+  bottom:0;
   background-image: url(imgs/background-contacts.png);
-  background-size: cover;
   width: 100%;
+  height: 400px;
+  font-size: 15px;
+  color:white;
+  align-items: center; 
+}
+.contato p{
+  display:inline;
+  margin-right:5px;
+  
+}
+.contatoimg{
+    margin-top: 50px;
+    align-items: center;
+}
+
+  .sobre{
+  background-image: url('imgs/sobre.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 100%;
+  padding: 50px 0;
+}
+
+  .home{
+  width: 100%
   height: auto;
-  padding: 20px;
-  color: white;
+  background-image: url(imgs/homemenor.png);
 }
-
-.contatoimg {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
+  
 @media only screen and (max-width: 768px) {
   ul {
     flex-direction: column;
