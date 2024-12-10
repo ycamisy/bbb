@@ -3,6 +3,7 @@
 <head>
 <title> Douce Vie </title>
   <link rel="icon" type="image/x-icon" href="/imgs/logobranca.png">
+<meta name charset="UTF-8">
 <meta name="description" coontent="Douce Vie">
 <meta name="keywords" content="confeitaria, doces, bolos, sobremesas">
 <meta name="author" content="Rebeca Peres Ferreira">
@@ -359,7 +360,13 @@ li a:hover {
     gap: 20px;
   }
 }
-
+@media only screen and (min-width: 1025px) {
+ #produtos, #novo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
 
 @media only screen and (max-width: 480px) {
   .produtos img, .novo img {
