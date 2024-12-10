@@ -201,12 +201,11 @@ li a:hover {
 }
 
 #novo {
-  margin: 20px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px; 
-} 
+  justify-content: space-between;
+  flex-wrap: nowrap; 
+  gap: 20px;
+}
 
 .novo {
   display: flex;
@@ -358,6 +357,20 @@ li a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+}
+  @media only screen and (max-width: 768px) {
+  #novo {
+    flex-wrap: wrap; /* Permite que os itens fiquem em múltiplas linhas, se necessário */
+  }
+
+  #novo .novo:last-child {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+    justify-content: center;
+    width: 100%;           
+    margin-top: 20px;   
   }
 }
 
